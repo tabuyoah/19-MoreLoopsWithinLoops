@@ -65,11 +65,11 @@ def draw_upside_down_wall(rectangle, n, window):
     for k in range(n):
         for j in range(k + 2):
             cor1 = rg.Point(x - 0.5 * l, y - w)
-            cor2 = rg. Point(x + 0.5 * l, y)
+            cor2 = rg.Point(x + 0.5 * l, y)
             rect = rg.Rectangle(cor1, cor2)
             rect.attach_to(window)
             x = x + l
-        
+
         y = y - w
 
 
