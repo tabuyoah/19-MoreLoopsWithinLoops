@@ -165,10 +165,10 @@ def largest_negative_number(seq_seq):
     #   being constructed (so the SPACE allowed is limited to the
     #   give sequence of sequences plus any non-list variables you want).
     # -------------------------------------------------------------------------
-    large_num = 100
+    large_num = seq_seq[0][0]
     for k in range(len(seq_seq)):
         for j in range(len(seq_seq[k])):
-            if seq_seq[k][j] < large_num:
+            if seq_seq[k][j] < large_num and seq_seq[k][j] < 0:
                 print(k)
                 large_num = seq_seq[k][j]
     return large_num
